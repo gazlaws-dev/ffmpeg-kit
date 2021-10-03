@@ -839,7 +839,7 @@ public class FFmpegKitConfig {
      *
      * @return input/output url that can be passed to FFmpegKit or FFprobeKit
      */
-    private static String getSafParameter(final Context context, final Uri uri, final String openMode) {
+    public static String getSafParameter(final Context context, final Uri uri, final String openMode) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             android.util.Log.i(TAG, String.format("getSafParameter is not supported on API Level %d", Build.VERSION.SDK_INT));
             return "";
